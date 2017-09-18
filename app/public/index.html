@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--font Lato-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/sidenav.css">
+</head>
+<body>
+<div id="backdrop">test</div>
+<div id="sidenav">
+    Everything
+</div>
+<div id="content">
+    <div class="container-fluid no-padding">
+    <!--Header row-->
+    <div class="row no-margin">
+        <div class="nav-bar">
+            <i class="fa fa-bars menu-icon" id="menu-toggle"></i>
+            <span class="header-text">Tali</span>
+            <!--<img class="search-itali src="img/search-blue.png" srcset="img/search-blue@2x.png 1000w, img/search-blue@3x.png 2000w">-->
+        </div>
+    </div>
+    <!--end Header-->
+    <!--Content - Entire content goes here!! Redux-React portion-->
+    <div class="row content-container" id="root">
+    </div>
+    <!--end Content-->
+    <div class="row footer no-margin">
+        <div class="hidden-sm-down col-md-3 col-lg-3 col-xl-3 no-padding">
+            <div class="footer-logo">
+                <!--<img class="footer-itali src="img/shape.png" srcset="img/shape@2x.png 1000w, img/shape@3x.png 2000w">-->
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 no-padding">
+            <div class="footer-content">
+                <div class="links">about us | Privacy policy | Term&Condition</div>
+                <div class="links">Copy right 2016</div>
+                <div class="powered">Powered By rahul.today</div>
+            </div>
+        </div>
+    </div>
+    <!--end Footer-->
+</div>
+</div>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="js/sidenav.min.js"></script>
+<script>
+    var sidenav = new Sidenav({
+        content: document.getElementById("content"),
+        sidenav: document.getElementById("sidenav"),
+        backdrop: document.getElementById("backdrop")
+    });
+    var menuOpen = false;
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+        if(menuOpen){
+            sidenav.close().then(function() { console.log("Hey! Sidenav is now open!"); });
+        }else{
+            sidenav.open().then(function() { console.log("Hey! Sidenav is now open!"); });
+        }
+        menuOpen = !menuOpen;
+    });
+</script>
+</body>
+</html>
