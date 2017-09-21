@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "copy": "cp ./app/build ./"
+    "copy": "cp ./app/build ./",
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
