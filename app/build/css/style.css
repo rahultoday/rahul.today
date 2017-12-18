@@ -1,0 +1,84 @@
+     /* CSS Document */
+
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+     background-color: #fff;
+ }
+ /*form area*/
+
+ .main-body {
+     width: 100%;
+     height: auto;
+     float: left;
+     padding: 15px 15px;
+     min-height: 660px;
+     background-color: #e6e6e6
+ }
+
+ .form-horizontal .control-label {
+     font-size: 14px;
+     font-weight: 600;
+     text-align: left;
+ }
+
+ .form-control {
+     border-radius: 0px 15px 0 15px;
+     background-color: #e6e6e6;
+ }
+
+ .btn-info {
+     border-radius: 0px 15px 0 15px;
+ }
+ /*form area*/
+ /*footer*/
+
+ .footer {
+     border-top: 1px solid #ddd;
+     width: 100%;
+     height: auto;
+     float: left;
+     padding: 15px 0;
+     background: #f6f6f6;
+ }
+ .btn-icon {
+     width: 15px;
+     float: left;
+     margin: 3px 10px 0px -5px;
+ }
+
+     .content {
+         margin: 5px;
+         padding: 5px;
+     }
+
+     .row {
+         height: 100%;
+         width: 100%;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-orient: horizontal;
+         -webkit-box-direction: normal;
+         -ms-flex-flow: row no-wrap;
+         flex-flow: row no-wrap;
+     }
+
+     .box {
+         height: 35px;
+         width: 35px;
+         background: white;
+         border: 1px solid black;
+     }
+     .path-red {
+         background-color: red !important;
+     }
+
+     .row:nth-child(2n+1) .box:nth-child(2n+1) {
+         background-color: black;
+     }
+
+     .row:nth-child(2n) .box:nth-child(2n) {
+         background-color: black;
+     }

@@ -1,1 +1,36 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="css/sidenav.css"><link href="/static/css/main.21236483.css" rel="stylesheet"></head><body><div id="backdrop">test</div><div id="sidenav">Everything</div><div id="content"><div class="container-fluid no-padding"><div class="row no-margin"><div class="nav-bar"><i class="fa fa-bars menu-icon" id="menu-toggle"></i> <span class="header-text">Tali</span></div></div><div class="row content-container" id="root"></div><div class="row footer no-margin"><div class="hidden-sm-down col-md-3 col-lg-3 col-xl-3 no-padding"><div class="footer-logo"></div></div><div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 no-padding"><div class="footer-content"><div class="links">about us | Privacy policy | Term&Condition</div><div class="links">Copy right 2016</div><div class="powered">Powered By rahul.today</div></div></div></div></div></div><script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script><script src="js/sidenav.min.js"></script><script>var sidenav=new Sidenav({content:document.getElementById("content"),sidenav:document.getElementById("sidenav"),backdrop:document.getElementById("backdrop")}),menuOpen=!1;document.getElementById("menu-toggle").addEventListener("click",function(){menuOpen?sidenav.close().then(function(){console.log("Hey! Sidenav is now open!")}):sidenav.open().then(function(){console.log("Hey! Sidenav is now open!")}),menuOpen=!menuOpen})</script><script type="text/javascript" src="/static/js/main.00ee291c.js"></script></body></html>
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Smart Grade</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <script src="shared/angular.js"></script>
+        <script src="shared/angular-route.js"></script>
+        <script src="shared/ui-router.js"></script>
+        <script src="exApp.js"></script>
+        <script src="controllers/simulatorCtrl.js"></script>
+        <script src="controllers/simulateBoardCtrl.js"></script>
+        <script src="services/baseSrv.js"></script>
+        <script src="services/motionSrv.js"></script>
+        <script src="services/boardSrv.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script type="text/javascript" src="bower_components/easystarjs/bin/easystar-0.4.1.js"></script>
+        </head>
+    <body ng-app="App" ng-controller="exRootCtrl">
+        <div class="main-body">
+            <div class="container">
+                 <ui-view></ui-view>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    </body>
+</html>
